@@ -62,15 +62,32 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
               <div>
                 {x.name}
               </div>
-              <button className={'selected-item__button'} onClick={() => setItem(item)}> X</button>
+              <button className={'selected-item__button selected-item__button--remove'} onClick={() => setItem(item)}> + </button>
             </div>
           )
         }
       }
       return res
-
     })
   }
+
+  const getAddButton = () => {
+    if (selectedItems.length > 0) {
+      return (
+        <div
+          key={'add'}
+          className={'selected-items__item selected-items__item--add'}
+          onClick={() => setShowList(true)}
+        >
+          <div>
+            Добавить
+          </div>
+          <button className={'selected-item__button selected-items__item--add selected-item__button--add'}> + </button>
+        </div>
+      )
+    }
+  }
+
 
   const getItems = () => {
 
@@ -94,7 +111,7 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
     return dataArr.map((item, i) => {
       let res = []
       if (item.name.toLowerCase().includes(search) || search === '') res.push(
-        <div className={'list-item'}>
+        <div className={'list-item'} onClick={() => setItem(item.id)} >
 
           <div className={'list-item__position'}>
 
@@ -119,12 +136,11 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
 
           </div>
 
-          <button
-            className={'list__button ' + (selectedItems.includes(item.id) ? 'list__button--selected' : 'list__button--unselected')}
-            onClick={() => setItem(item.id)}
+          <div
+            className={'list__indicator ' + (selectedItems.includes(item.id) ? 'list__indicator--selected' : 'list__indicator--unselected')}
           >
             L
-          </button>
+          </div>
 
         </div>
       )
@@ -141,8 +157,11 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
         <div className={'flex1'}>
           <div className={'selected-items'}>
             {getSelectedItems()}
+            {getAddButton()}
           </div>
           <input
+            onClick={() => setShowList(!showList)}
+            onKeyPress={(event) => event.key === 'Enter' && setShowList(!showList)}
             className={'selectedItems-container__search'}
             type="text"
             placeholder={placeholder}
@@ -151,8 +170,8 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
         </div>
         <div>
           <button
-            className={'selectedItems-container__button'}
             onClick={() => setShowList(!showList)}
+            className={'selectedItems-container__button'}
           >
             {showList === true ? '^' : 'v'}
           </button>

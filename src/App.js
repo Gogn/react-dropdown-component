@@ -37,13 +37,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <DropDown
-          multiSelect={true}
-          placeholder='Поиск валют...'
-          data={data}
-          onChangeCallback={(data) => {onChangeCallback(data)}}
-          preloadFunc={preloadFunc}
-        />
+        <div style={{height:'700px', width:'60%'}}>
+          <DropDown
+            multiSelect={true}
+            placeholder='Поиск валют...'
+            data={data}
+            onChangeCallback={(data) => {onChangeCallback(data)}}
+            preloadFunc={preloadFunc}
+          />
+        </div>
 
         <p>
           Edit <code>src/App.js</code> and save to reload.
