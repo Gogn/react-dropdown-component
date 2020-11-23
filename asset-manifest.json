@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-dropdown-component/static/css/main.42472b6e.chunk.css",
-    "main.js": "/react-dropdown-component/static/js/main.e9fdea3a.chunk.js",
-    "main.js.map": "/react-dropdown-component/static/js/main.e9fdea3a.chunk.js.map",
+    "main.js": "/react-dropdown-component/static/js/main.ba6ac197.chunk.js",
+    "main.js.map": "/react-dropdown-component/static/js/main.ba6ac197.chunk.js.map",
     "runtime-main.js": "/react-dropdown-component/static/js/runtime-main.0f1470c9.js",
     "runtime-main.js.map": "/react-dropdown-component/static/js/runtime-main.0f1470c9.js.map",
     "static/js/2.701f8d73.chunk.js": "/react-dropdown-component/static/js/2.701f8d73.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0f1470c9.js",
     "static/js/2.701f8d73.chunk.js",
     "static/css/main.42472b6e.chunk.css",
-    "static/js/main.e9fdea3a.chunk.js"
+    "static/js/main.ba6ac197.chunk.js"
   ]
 }
