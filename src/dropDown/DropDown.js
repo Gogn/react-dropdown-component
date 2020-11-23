@@ -37,8 +37,6 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
   }, [selectedItems])
 
   const setItem = (item) => {
-    console.log('item:', item)
-    console.log('selectedItems.includes(item)', selectedItems.includes(item))
     // Remove
     if (selectedItems.includes(item)) {
       setSelectedItems(selectedItems.filter(i => i !== item))
@@ -55,8 +53,6 @@ const DropDown = ({ data, multiSelect, placeholder, preloadFunc, onChangeCallbac
   }
 
   const getSelectedItems = () => {
-    console.log('getSelectedItems')
-    console.log('selectedItems', selectedItems)
     return selectedItems.map((item, index) => {
       let res = []
       for (let x of dataArr) {
