@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-dropdown-component/static/css/main.3bed4637.chunk.css",
+    "main.css": "/react-dropdown-component/static/css/main.42472b6e.chunk.css",
     "main.js": "/react-dropdown-component/static/js/main.e9fdea3a.chunk.js",
     "main.js.map": "/react-dropdown-component/static/js/main.e9fdea3a.chunk.js.map",
     "runtime-main.js": "/react-dropdown-component/static/js/runtime-main.0f1470c9.js",
@@ -10,14 +10,14 @@
     "static/js/3.7ebf7b54.chunk.js": "/react-dropdown-component/static/js/3.7ebf7b54.chunk.js",
     "static/js/3.7ebf7b54.chunk.js.map": "/react-dropdown-component/static/js/3.7ebf7b54.chunk.js.map",
     "index.html": "/react-dropdown-component/index.html",
-    "static/css/main.3bed4637.chunk.css.map": "/react-dropdown-component/static/css/main.3bed4637.chunk.css.map",
+    "static/css/main.42472b6e.chunk.css.map": "/react-dropdown-component/static/css/main.42472b6e.chunk.css.map",
     "static/js/2.701f8d73.chunk.js.LICENSE.txt": "/react-dropdown-component/static/js/2.701f8d73.chunk.js.LICENSE.txt",
     "static/media/logo.103b5fa1.svg": "/react-dropdown-component/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0f1470c9.js",
     "static/js/2.701f8d73.chunk.js",
-    "static/css/main.3bed4637.chunk.css",
+    "static/css/main.42472b6e.chunk.css",
     "static/js/main.e9fdea3a.chunk.js"
   ]
 }
