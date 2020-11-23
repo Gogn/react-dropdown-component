@@ -67,7 +67,6 @@
 
 .selected-item__button {
   background-color: transparent;
-  height: 17px;
   margin-left: 5px;
   padding: 0;
   color: white;
@@ -75,13 +74,9 @@
   border: none;
   cursor: pointer;
   font-size: 1.5em;
-  margin-top: -8px;
 }
 
 .selected-item__button--remove {
-  margin-top: -4px;
-  margin-left: 8px;
-  margin-right: -4px;
   transform: rotate(45deg);
 }
 
@@ -92,6 +87,7 @@
 }
 
 .selected-item__button--add {
+  background-color: transparent;
 }
 
 .list {
